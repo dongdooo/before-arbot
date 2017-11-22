@@ -1,0 +1,101 @@
+.btc {
+
+    background-color: rgba(255, 153, 51, 0.2);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.eth {
+
+    background-color: rgba(153, 204, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.xrp {
+    background-color: rgba(0, 204, 153, 0.2);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.etc {
+    background-color: rgba(255, 204, 204, 0.2);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.pair {
+
+background: #999999;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:14px;  
+padding: 5px 10px 5px 10px;
+color: #fff;
+font-weight: bold;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+border-bottom: 1px solid rgba(0,0,0,0.25);
+cursor: pointer;
+border-left:none;
+border-top:none;
+margin:10px 0 10px 0;
+}
+
+
+.pair:hover{
+background: #858585;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headpair1 {
+
+    background-color: rgba(0, 204, 204, 0.2);
+    padding: 10px;
+    text-align: center;
+}
+
+.headpair2 {
+
+    background-color: rgba(51, 102, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+}
+
+.headpair3 {
+
+    background-color: rgba(204, 179, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+}
+
+.eth-check {
+
+    background-color: rgba(153, 204, 255, 0.2);
+    padding: 5px;
+   
+
+}
+
+.xrp-check {
+    background-color: rgba(0, 204, 153, 0.2);
+    padding: 5px;
+}
+
+.etc-check {
+    background-color: rgba(255, 204, 204, 0.2);
+    padding: 5px;
+}
+
+.percent{
+    background-color: rgba(255, 255, 77,0.2)
+}

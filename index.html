@@ -1,0 +1,3896 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Cryptovation.co</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <!-- Logo Cryptovation -->
+      <div class="row">
+        <div class="col-md-12">
+          <center><a href="https://cryptovation.co/"><img class="compLogo" src="images/compLogo-black.png" ></a></center>
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+
+      <!-- Introduction -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h5><center>ยินดีต้อนรับทุกท่านเข้าสู่การใช้งาน Arbot 1.4 Beta โดยก่อนจะเข้าใช้งานระบบนี้ได้ ท่านจะต้องเตรียมพร้อมบัญชีซื้อขายในแต่ละตลาดของท่านตามดังนี้ <a href="https://blog.cryptovation.co/">คลิกที่นี่</a> </center></h5>
+              <h5><center>Welcome to the very first Arbot 1.4 Beta! Please note that you must have account on all used exchanges to successfully execute all the arbitraging opportunities,  <a href="https://blog.cryptovation.co/">click here</a> for instruction.</center></h5>
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel-default -->
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+
+
+
+
+      <!-- Real-Time Trading Chart -->
+      <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h2><center> Real-Time Cryptocurrency Price </center></h2>
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel-default -->
+        </div> <!-- /.col -->
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+            <div class="row">
+        
+      </div> <!-- /.row -->
+            <div class="panel-body">
+
+              <div class="table-responsive">
+
+                <table class="table table-bordered">
+
+                  <thead>
+
+                    <tr class="logo">
+
+                      <th style="vertical-align: middle;"><center>Exchange Market</center></th>
+
+                      <th class="danger" colspan="2"><a target ="_blank" href="https://bitcoin.org/en/"><img class="logo" src="images/BTClogo.png" ></a> Bitcoin (BTC)</th>
+
+                      <th class="success" colspan="2"><a target ="_blank" href="https://www.ethereum.org/"><img class="logo" src="images/ETHlogo.png" ></a> Ethereum (ETH)</th>
+
+                      <th class="warning" colspan="2"><a target ="_blank" href="https://ripple.com/"><img class="logo" src="images/XRPlogo.png" ></a> Ripple (XRP) </th>
+
+                      <th class="info" colspan="2"><a target ="_blank" href="https://ethereumclassic.github.io/"><img class="logo" src="images/ETClogo.png" ></a> Ethereum Classic (ETC) </th>
+
+                    </tr>
+
+                    <tr>
+                    <th style="vertical-align: middle;"><center>Region</center></th>
+
+                      <th class="danger">Buy</td>
+
+                      <th class="danger">Sell</td>
+
+                      <th class="success">Buy</td>
+
+                      <th class="success">Sell</td>
+
+                      <th class="warning">Buy</td>
+
+                      <th class="warning">Sell</td>
+
+                      <th class="info">Buy</td>
+
+                      <th class="info">Sell</td>
+
+                    </tr>
+
+                  </thead>
+
+                  <tbody>
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a>
+                        <br>
+                          EU/USA
+                        </center>
+                      </td>
+
+                      <td class="danger" id="KK-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="KK-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a>
+                          <br>
+                            Korea
+                        </center>
+                      </td>
+
+                      <td class="danger" id="CO-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="CO-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a>
+                        <br>
+                          USA
+                        </center>
+                      </td>
+
+                      <td class="danger" id="PO-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="PO-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a>
+                        <br>
+                          Thailand
+                        </center>
+                      </td>
+
+                      <td class="danger" id="BX-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="BX-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                    </tr> 
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a>
+                        <br>
+                          USA
+                        </center>
+                      </td>
+
+                      <td class="danger" id="BF-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="BF-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a>
+                        <br>
+                          USA
+                        </center>
+                      </td>
+
+                      <td class="danger" id="BT-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="BT-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-ETC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-ETC_sellchoice" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                      <td>
+                        <center>
+                          <a target ="_blank" href="https://www.bitstamp.net">
+                            <img class="logo" src="images/bitstampLogo.png">
+                          </a>
+                        <br>
+                          UK
+                        </center>
+                      </td>
+
+                      <td class="danger" id="BS-BTC_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="danger" id="BS-BTC_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-ETH_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-ETH_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-XRP_buychoice" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-XRP_sellchoice" style="vertical-align: middle;"></td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                      <td class="info" style="vertical-align: middle;">-</td>
+
+                    </tr> 
+
+                  </tbody>
+
+                </table>
+                 $ = US Dollar    | ₩ = South Korean Won |  ฿ = Thai Baht
+                    
+
+
+              </div> <!-- /.table-responsive -->
+
+            </div> <!-- /.panel-body -->
+
+
+          </div> <!-- /.panel-primary -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+      <div class="container">
+
+
+
+      <!-- Logo Cryptovation -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h2><center> One-Way Arbitraging Table </center></h2>
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel-default -->
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+
+
+<!-- Real-Time Trading Chart -->
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+            
+
+            <div class="panel-body">
+
+              <div class="table-responsive">
+
+                <table class="table table-bordered">
+
+                  <thead>
+
+                    <tr>
+
+                      <th style="vertical-align: middle;">Market</td>
+
+                      <th class="danger" ><img class="logo" src="images/BTClogo.png"> BTC</td>
+
+                      <th class="success" ><img class="logo" src="images/ETHlogo.png"> ETH</td>
+
+                      <th class="warning" ><img class="logo" src="images/XRPlogo.png"> XRP</td>
+
+                      <th class="info" ><img class="logo" src="images/ETClogo.png"> ETC</td>
+
+                    </tr>
+
+                    
+
+                  </thead>
+
+                 <tbody>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-BX_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="KK-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="KK-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="KK-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="KK-BS_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-BX_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="CO-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a></td>
+
+
+                      <td class="danger" id="CO-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="CO-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="CO-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="CO-BS_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    
+                   
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                     <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-BX_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="PO-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                      <td><a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="PO-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="PO-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="PO-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="PO-BS_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+
+
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BX-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                   
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BX-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BX-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a>to<a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BX-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BX-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="BX-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BX-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BX-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BX-BS_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BF-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                   
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BF-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BF-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a>to<a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a></td>
+                      <td class="danger" id="BF-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-BX_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BF-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="BF-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BF-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BF-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BF-BS_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BT-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                   
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BT-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BT-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a>to<a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a></td>
+                      <td class="danger" id="BT-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-BX_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a>to<a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BT-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a> to <a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a></td>
+                      <td class="danger" id="BT-BS_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BT-BS_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BT-BS_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BT-BS_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a> to <a target ="_blank" href="https://www.kraken.com/">
+                            <img class="logo" src="images/krakenLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BS-KK_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-KK_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-KK_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-KK_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                   
+
+                    <tr>
+
+                       <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a>to <a target ="_blank" href="https://coinone.co.kr/">
+                            <img class="logo" src="images/coinoneLogo.png">
+                          </a></td>
+
+                      <td class="danger" id="BS-CO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-CO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-CO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-CO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr>
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a>to<a target ="_blank" href="https://poloniex.com/login">
+                            <img class="logo" src="images/poloniexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BS-PO_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-PO_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-PO_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-PO_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a>to<a target ="_blank" href="https://bx.in.th/ref/AFILaS">
+                            <img class="logobx" src="images/bxLogo.png">
+                          </a></td>
+                      <td class="danger" id="BS-BX_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-BX_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-BX_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-BX_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a>to<a target ="_blank" href="https://www.bitfinex.com/">
+                            <img class="logobx" src="images/bitfinexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BS-BF_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-BF_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-BF_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-BF_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                    <tr>
+
+                     <td><a target ="_blank" href="https://www.bitstamp.net/">
+                            <img class="logobx" src="images/bitstampLogo.png">
+                          </a> to <a target ="_blank" href="https://bittrex.com/">
+                            <img class="logobx" src="images/bittrexLogo.png">
+                          </a></td>
+                      <td class="danger" id="BS-BT_BTC_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="success" id="BS-BT_ETH_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="warning" id="BS-BT_XRP_oneWay" style="vertical-align: middle;"></td>
+
+                      <td class="info" id="BS-BT_ETC_oneWay" style="vertical-align: middle;"></td>
+
+                    </tr> 
+
+                  </tbody>
+
+                   
+                </table>
+
+              </div> <!-- /.table-responsive -->
+
+              <ul class="nav navbar-nav navbar-right">
+
+            </ul>
+
+            </div> <!-- /.panel-body -->
+
+          </div> <!-- /.panel-primary -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+
+
+    </div> <!-- /.container -->
+
+
+
+
+      <!-- Display Chart -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h2><center> Loop Arbitraging Table </center></h2>
+              
+            </div> <!-- /.panel-body -->
+          </div> <!-- /.panel-default -->
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+
+      
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading" id="ETH-XRP">
+            <h4>
+            <center>
+              Ethereum  and Ripple  
+            <br>
+              (ETH-XRP)
+              </center>
+            </h4>
+            <h5 style="vertical-align: middle"; >Initial Fund = $ 10,000 </h5>
+            </div> <!-- /.panel-heading -->
+
+            <div class="panel-body">
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+                      
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Ethereum First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!--<tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken-BX</td>
+
+                        <td class="warning" id="profit%_KK-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>-->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!--<tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to BX</td>
+
+                        <td class="warning" id="profit%_CO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>-->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!--<tr>
+
+                        <td class="info" style="vertical-align: middle;">PO-BX</td>
+
+                        <td class="warning" id="profit%_PO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-BX_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX to Kraken</td>
+
+                        <td class="warning" id="profit%_BX-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-KK_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-CO</td>
+
+                        <td class="warning" id="profit%_BX-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-CO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-Poloniex</td>
+
+                        <td class="warning" id="profit%_BX-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-PO_ETH-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>-->
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                        <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Ripple First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!--<tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken-BX</td>
+
+                        <td class="warning" id="profit%_KK-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>-->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to BX</td>
+
+                        <td class="warning" id="profit%_CO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">PO-BX</td>
+
+                        <td class="warning" id="profit%_PO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-BX_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX to Kraken</td>
+
+                        <td class="warning" id="profit%_BX-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-KK_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-CO</td>
+
+                        <td class="warning" id="profit%_BX-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-CO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-Poloniex</td>
+
+                        <td class="warning" id="profit%_BX-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-PO_XRP-ETH" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+            </div> <!-- /.panel-body -->
+
+          </div> <!-- /.panel-primary -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+      <ul class="nav nav-pills nav-justified">
+            <li class="active"><a href="#ETH-XRP">ETH-XRP</a></li>
+            <li><a href="#ETH-ETC">ETH-ETC</a></li>
+            <li><a href="#XRP-ETC">XRP-ETC</a></li>
+            <li><a href="#ETH-BTC">ETH-BTC</a></li>
+            <li><a href="#BTC-XRP">BTC-XRP</a></li>
+            <li><a href="#BTC-ETC">BTC-ETC</a></li>
+          </ul>
+
+
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading" id="ETH-ETC">
+            <h4><center>
+              Ethereum  and Ethereum Classic 
+            <br>
+              (ETH-ETC)
+              </center></h4>
+              <h5 style="vertical-align: middle"; >Initial Fund = $ 10,000 </h5>
+            </div> <!-- /.panel-heading -->
+
+            <div class="panel-body">
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                    <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Ethereum First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_ETH-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloinex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_ETH-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                    <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Ethereum Classic First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_ETC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex - Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_ETC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+            </div> <!-- /.panel-body -->
+
+          </div> <!-- /.panel-primary -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+<ul class="nav nav-pills nav-justified">
+            <li ><a href="#ETH-XRP">ETH-XRP</a></li>
+            <li class="active"><a href="#ETH-ETC">ETH-ETC</a></li>
+            <li><a href="#XRP-ETC">XRP-ETC</a></li>
+            <li><a href="#ETH-BTC">ETH-BTC</a></li>
+            <li><a href="#BTC-XRP">BTC-XRP</a></li>
+            <li><a href="#BTC-ETC">BTC-ETC</a></li>
+          </ul>
+
+
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading" id="XRP-ETC">
+            <h4>
+            <center>
+              Ripple and Ethereum Classic 
+            <br>
+              (XRP-ETC)
+              </center></h4>
+              <h5 style="vertical-align: middle"; >Initial Fund = $ 10,000 </h5>
+            </div> <!-- /.panel-heading -->
+
+            <div class="panel-body">
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                    <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Ripple First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_XRP-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_XRP-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                    <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Ethereum Classic First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_ETC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_ETC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+            </div> <!-- /.panel-body -->
+
+          </div> <!-- /.panel-primary -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+<ul class="nav nav-pills nav-justified">
+            <li ><a href="#ETH-XRP">ETH-XRP</a></li>
+            <li><a href="#ETH-ETC">ETH-ETC</a></li>
+            <li class="active"><a href="#XRP-ETC">XRP-ETC</a></li>
+            <li><a href="#ETH-BTC">ETH-BTC</a></li>
+            <li><a href="#BTC-XRP">BTC-XRP</a></li>
+            <li><a href="#BTC-ETC">BTC-ETC</a></li>
+          </ul>
+
+
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading" id="ETH-BTC" >
+              <h4>
+              <center>
+              Ethereum  and Bitcoin 
+            <br>
+              (ETH-BTC)
+              </center>
+              </h4>
+              <h5 style="vertical-align: middle"; >Initial Fund = $ 10,000 </h5>
+            </div> <!-- /.panel-heading -->
+
+            <div class="panel-body">
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                    <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Ethereum First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken-BX</td>
+
+                        <td class="warning" id="profit%_KK-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">CO-BX</td>
+
+                        <td class="warning" id="profit%_CO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">PO-BX</td>
+
+                        <td class="warning" id="profit%_PO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-BX_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX to Kraken</td>
+
+                        <td class="warning" id="profit%_BX-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-KK_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-Coinone</td>
+
+                        <td class="warning" id="profit%_BX-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-CO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-Poloniex</td>
+
+                        <td class="warning" id="profit%_BX-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-PO_ETH-BTC" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                    <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Bitcoin First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken-BX</td>
+
+                        <td class="warning" id="profit%_KK-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">CO-BX</td>
+
+                        <td class="warning" id="profit%_CO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">PO-BX</td>
+
+                        <td class="warning" id="profit%_PO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-BX_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX to Kraken</td>
+
+                        <td class="warning" id="profit%_BX-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-KK_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-Coinone</td>
+
+                        <td class="warning" id="profit%_BX-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-CO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-Poloniex</td>
+
+                        <td class="warning" id="profit%_BX-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-PO_BTC-ETH" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+            </div> <!-- /.panel-body -->
+
+          </div> <!-- /.panel-primary -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+<ul class="nav nav-pills nav-justified">
+            <li ><a href="#ETH-XRP">ETH-XRP</a></li>
+            <li><a href="#ETH-ETC">ETH-ETC</a></li>
+            <li><a href="#XRP-ETC">XRP-ETC</a></li>
+            <li class="active"><a href="#ETH-BTC">ETH-BTC</a></li>
+            <li><a href="#BTC-XRP">BTC-XRP</a></li>
+            <li><a href="#BTC-ETC">BTC-ETC</a></li>
+          </ul>
+
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading" id="BTC-XRP">
+            <h4>
+<center>
+              Bitcoin  and Ripple 
+            <br>
+              (BTC-XRP)
+              </center>
+              </h4>
+              <h5 style="vertical-align: middle"; >Initial Fund = $ 10,000 </h5>
+            </div> <!-- /.panel-heading -->
+
+            <div class="panel-body">
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                    <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Bitcoin First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken-BX</td>
+
+                        <td class="warning" id="profit%_KK-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">CO-BX</td>
+
+                        <td class="warning" id="profit%_CO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">PO-BX</td>
+
+                        <td class="warning" id="profit%_PO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-BX_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX to Kraken</td>
+
+                        <td class="warning" id="profit%_BX-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-KK_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-Coinone</td>
+
+                        <td class="warning" id="profit%_BX-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-CO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-Poloniex</td>
+
+                        <td class="warning" id="profit%_BX-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-PO_BTC-XRP" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                    <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Ripple First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken-BX</td>
+
+                        <td class="warning" id="profit%_KK-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to BX</td>
+
+                        <td class="warning" id="profit%_CO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <!-- <tr>
+
+                        <td class="info" style="vertical-align: middle;">PO-BX</td>
+
+                        <td class="warning" id="profit%_PO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-BX_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX to Kraken</td>
+
+                        <td class="warning" id="profit%_BX-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-KK_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-Coinone</td>
+
+                        <td class="warning" id="profit%_BX-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-CO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">BX-Poloniex</td>
+
+                        <td class="warning" id="profit%_BX-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_BX-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_BX-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_BX-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_BX-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_BX-PO_XRP-BTC" style="vertical-align: middle;"></td>
+
+                      </tr> -->
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+            </div> <!-- /.panel-body -->
+
+          </div> <!-- /.panel-primary -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+<ul class="nav nav-pills nav-justified">
+            <li><a href="#ETH-XRP">ETH-XRP</a></li>
+            <li><a href="#ETH-ETC">ETH-ETC</a></li>
+            <li><a href="#XRP-ETC">XRP-ETC</a></li>
+            <li><a href="#ETH-BTC">ETH-BTC</a></li>
+            <li class="active"><a href="#BTC-XRP">BTC-XRP</a></li>
+            <li><a href="#BTC-ETC">BTC-ETC</a></li>
+          </ul>
+
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <div class="panel panel-primary">
+
+            <div class="panel-heading" id="BTC-ETC">
+              <h4>
+              <center>
+              Bitcoin and Ethereum Classic 
+            <br>
+              (BTC-ETC)
+              </center>
+              </h4>
+              <h5 style="vertical-align: middle"; >Initial Fund = $ 10,000 </h5>
+            </div> <!-- /.panel-heading -->
+
+            <div class="panel-body">
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                    <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Bitcoin First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_BTC-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_BTC-ETC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+
+
+              <div class="col-md-6">
+
+                <div class="table-responsive">
+
+                  <table class="table table-bordered">
+
+                    <thead>
+
+                    <tr class="info">
+
+                        <th style="vertical-align: middle;" colspan="7">Ethereum Classic First</td>
+
+                      </tr>
+
+                      <tr class="info">
+
+                        <th style="vertical-align: middle;">Market</td>
+
+                        <th style="vertical-align: middle;">Profit (%)</td>
+
+                        <th style="vertical-align: middle;">Crypto Out</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Crypto In</td>
+
+                        <th style="vertical-align: middle;">Cash Value</td>
+
+                        <th style="vertical-align: middle;">Cash Profit</td>
+
+                      </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Coinone</td>
+
+                        <td class="warning" id="profit%_KK-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Kraken to Poloniex</td>
+
+                        <td class="warning" id="profit%_KK-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_KK-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_KK-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_KK-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_KK-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_KK-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Kraken</td>
+
+                        <td class="warning" id="profit%_CO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Coinone to Poloniex</td>
+
+                        <td class="warning" id="profit%_CO-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_CO-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_CO-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_CO-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_CO-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_CO-PO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Kraken</td>
+
+                        <td class="warning" id="profit%_PO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-KK_ETC-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td class="info" style="vertical-align: middle;">Poloniex to Coinone</td>
+
+                        <td class="warning" id="profit%_PO-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoGO_PO-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyThere_PO-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="cryptoBack_PO-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="moneyBack_PO-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                        <td id="profit_PO-CO_ETC-BTC" style="vertical-align: middle;"></td>
+
+                      </tr>
+
+                    </tbody>
+
+                  </table>
+
+                </div> <!-- /.table-responsive -->
+
+              </div> <!-- /.col-md-6 -->
+
+            </div> <!-- /.panel-body -->
+
+          </div> <!-- /.panel-primary -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+      <ul class="nav nav-pills nav-justified">
+            <li ><a href="#ETH-XRP">ETH-XRP</a></li>
+            <li><a href="#ETH-ETC">ETH-ETC</a></li>
+            <li><a href="#XRP-ETC">XRP-ETC</a></li>
+            <li><a href="#ETH-BTC">ETH-BTC</a></li>
+            <li><a href="#BTC-XRP">BTC-XRP</a></li>
+            <li class="active"><a href="#BTC-ETC">BTC-ETC</a></li>
+          </ul>
+
+
+
+    </div> <!-- /.container -->
+
+  </body>
+
+
+
+</html>
+          
